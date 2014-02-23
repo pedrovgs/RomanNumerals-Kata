@@ -85,12 +85,12 @@ public class RomanNumeralsTest {
     public Map<String, Integer> getNotDirectTranslations() {
         Map<String, Integer> directTranslations = new HashMap<String, Integer>();
         directTranslations.put("MMM", 3000);
-        directTranslations.put("MCMXC", 1990);
         directTranslations.put("MMVIII", 2008);
         directTranslations.put("LXXVIII", 78);
-        directTranslations.put("XCIX", 99);
         directTranslations.put("XI", 11);
         directTranslations.put("XX", 20);
+        directTranslations.put("XCIX", 99);
+        directTranslations.put("MCMXC", 1990);
         return directTranslations;
     }
 }
