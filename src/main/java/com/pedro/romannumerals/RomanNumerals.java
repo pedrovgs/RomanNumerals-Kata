@@ -16,7 +16,7 @@ public class RomanNumerals {
      */
 
     private Translator romanToArabicTranslator;
-
+    private Translator arabicToRomanTranslator;
 
     /*
      * Public constructor
@@ -24,6 +24,7 @@ public class RomanNumerals {
 
     public RomanNumerals() {
         this.romanToArabicTranslator = TranslatorFactory.getRomanToArabicTranslator();
+        this.arabicToRomanTranslator = TranslatorFactory.getArabicToRomanTranslator();
     }
 
 
@@ -45,6 +46,6 @@ public class RomanNumerals {
      * @return the translated version of the arabic number in roman format.
      */
     public String fromArabicToRoman(Integer arabicNumber) {
-        return null;
+        return arabicToRomanTranslator.translate(arabicNumber + "");
     }
 }

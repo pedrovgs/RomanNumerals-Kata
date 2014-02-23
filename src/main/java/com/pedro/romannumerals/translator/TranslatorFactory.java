@@ -12,4 +12,8 @@ public class TranslatorFactory {
     public static Translator getRomanToArabicTranslator() {
         return new RomanToArabicTranslator(romanToArabicDirectTranslationTable);
     }
+
+    public static Translator getArabicToRomanTranslator() {
+        return null;
+    }
 }
