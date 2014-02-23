@@ -7,7 +7,7 @@ package com.pedro.romannumerals.translator;
  *
  * @author Pedro Vicente Gómez Sánchez.
  */
-public class RomanToArabicTranslator implements Translator {
+class RomanToArabicTranslator implements Translator {
 
 
     /*
