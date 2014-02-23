@@ -83,6 +83,16 @@ public class RomanNumeralsTest {
         }
     }
 
+    @Test
+    public void usingConnectingTranslatrsWithTheSameValuesShouldReturnsEquivalentTranslations() {
+        for (int i = 1; i <= 3000; i++) {
+            String romanTranslation = romanNumerals.fromArabicToRoman(i);
+            int arabicTranslation = romanNumerals.fromRomanToArabic(romanTranslation);
+
+            assertEquals(i, arabicTranslation);
+        }
+    }
+
     /*
      * Auxiliary methods
      */
