@@ -14,7 +14,7 @@ class DirectTranslationTable {
      * Attributes
      */
 
-    private Set<DirectTranslation> directTranslations;
+    protected Set<DirectTranslation> directTranslations;
 
     /*
      * Constructor

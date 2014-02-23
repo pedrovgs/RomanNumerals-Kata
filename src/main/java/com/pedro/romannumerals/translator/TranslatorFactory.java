@@ -8,12 +8,13 @@ package com.pedro.romannumerals.translator;
 public class TranslatorFactory {
 
     private static RomanToArabicDirectTranslationTable romanToArabicDirectTranslationTable = new RomanToArabicDirectTranslationTable();
+    private static ArabicToRomanTranslationTable arabicToRomanTranslationTable = new ArabicToRomanTranslationTable();
 
     public static Translator getRomanToArabicTranslator() {
         return new RomanToArabicTranslator(romanToArabicDirectTranslationTable);
     }
 
     public static Translator getArabicToRomanTranslator() {
-        return null;
+        return new ArabicToRomanTranslator(arabicToRomanTranslationTable);
     }
 }
