@@ -38,5 +38,13 @@ public class RomanNumerals {
         return Integer.parseInt(translationResult);
     }
 
-
+    /**
+     * Translate a number from the arabic format to the roman format.
+     *
+     * @param arabicNumber to translate
+     * @return the translated version of the arabic number in roman format.
+     */
+    public String fromArabicToRoman(Integer arabicNumber) {
+        return null;
+    }
 }
