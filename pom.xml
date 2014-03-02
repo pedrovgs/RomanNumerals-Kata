@@ -6,6 +6,7 @@
 
     <!-- Project configuration -->
 
+    <name>RomanNumerals</name>
     <groupId>Roman-Numerals</groupId>
     <artifactId>com.pedro.romannumerals</artifactId>
     <version>1.0</version>
@@ -67,5 +68,5 @@
             </dependencies>
         </profile>
     </profiles>
-    
+
 </project>
