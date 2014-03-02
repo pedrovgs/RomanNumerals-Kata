@@ -29,7 +29,7 @@ class DirectTranslationTable {
      * Attributes
      */
 
-    protected Set<DirectTranslation> directTranslations;
+    private Set<DirectTranslation> directTranslations;
 
     /*
      * Constructor
@@ -52,6 +52,9 @@ class DirectTranslationTable {
         return !searchTranslation(textToTranslate).isEmpty();
     }
 
+    Set<DirectTranslation> getDirectTranslations() {
+        return directTranslations;
+    }
 
     /*
      * Auxiliary methods

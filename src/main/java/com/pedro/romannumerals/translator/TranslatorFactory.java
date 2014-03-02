@@ -20,7 +20,10 @@ package com.pedro.romannumerals.translator;
  *
  * @author Pedro Vicente Gómez Sánchez.
  */
-public class TranslatorFactory {
+public final class TranslatorFactory {
+
+    private TranslatorFactory() {
+    }
 
     private static RomanToArabicDirectTranslationTable romanToArabicDirectTranslationTable = new RomanToArabicDirectTranslationTable();
     private static ArabicToRomanTranslationTable arabicToRomanTranslationTable = new ArabicToRomanTranslationTable();

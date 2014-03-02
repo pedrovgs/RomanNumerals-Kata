@@ -59,8 +59,7 @@ class RomanToArabicTranslator implements Translator {
 
         //Base case of the recursive algorithm
         if (existDirectTranslationFor(textToTranslate)) {
-            String directTranslationFound = getDirectTranslationFor(textToTranslate);
-            return directTranslationFound;
+            return getDirectTranslationFor(textToTranslate);
         }
 
         String directTranslation = getDirectTranslationFor(textToTranslate);
@@ -92,8 +91,7 @@ class RomanToArabicTranslator implements Translator {
         String oneCharResult = translationTable.getTranslationFor(textToTranslate);
         String subsetToEvaluate = getSubsetToEvaluate(textToTranslate);
         String twoCharResult = translationTable.getTranslationFor(subsetToEvaluate);
-        String result = twoCharResult.isEmpty() ? oneCharResult : twoCharResult;
-        return result;
+        return twoCharResult.isEmpty() ? oneCharResult : twoCharResult;
     }
 
     private boolean existDirectTranslationFor(String textToTranslate) {

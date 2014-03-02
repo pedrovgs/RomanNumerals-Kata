@@ -23,7 +23,7 @@ package com.pedro.romannumerals.translator;
 public interface Translator {
 
 
-    public String translate(String textToTranslate);
+    String translate(String textToTranslate);
 
 
 }

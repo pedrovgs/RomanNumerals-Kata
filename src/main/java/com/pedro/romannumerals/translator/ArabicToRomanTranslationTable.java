@@ -55,12 +55,13 @@ class ArabicToRomanTranslationTable extends DirectTranslationTable {
 
     int getBetterTranslation(String arabicNumber) {
         int number = Integer.parseInt(arabicNumber);
-        for (DirectTranslation translation : directTranslations) {
+        for (DirectTranslation translation : getDirectTranslations()) {
             if (number - Integer.parseInt(translation.getFromValue()) >= 0) {
                 return Integer.parseInt(translation.getFromValue());
             }
         }
         return 0;
     }
+
 
 }
