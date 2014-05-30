@@ -22,25 +22,13 @@ package com.pedro.romannumerals.translator;
  */
 class DirectTranslation {
 
-    /*
-     * Attributes
-     */
-
     private final String fromValue;
     private final String toValue;
-
-    /*
-     * Constructor
-     */
 
     DirectTranslation(String fromValue, String toValue) {
         this.fromValue = fromValue;
         this.toValue = toValue;
     }
-
-    /*
-     * Getters and setters
-     */
 
     String getFromValue() {
         return fromValue;
@@ -49,10 +37,6 @@ class DirectTranslation {
     String getToValue() {
         return toValue;
     }
-
-    /*
-     * Equals/hashCode implementation
-     */
 
     @Override
     public boolean equals(Object o) {

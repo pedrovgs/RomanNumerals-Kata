@@ -30,43 +30,22 @@ import static org.mockito.Mockito.when;
  */
 public class RomanToArabicTranslatorTest {
 
-    /*
-     * Constants
-     */
-
     private static final String EMPTY_RESULT = "";
     private static final String DIRECT_TRANSLATION_INPUT = "a";
     private static final String DIRECT_TRANSLATION_OUTPUT = "1";
-    protected static final String TEXT_TO_TRANSLATE = "t_t";
+    private static final String TEXT_TO_TRANSLATE = "t_t";
     private static final String TEXT_TO_TRANSLATE_TRANSLATION = "3";
 
-    /*
-     * Test data
-     */
-
-    protected Translator translator;
-
-    /*
-     * Mocks
-     */
+    private Translator translator;
 
     @Mock
-    protected DirectTranslationTable mockedTranslationTable;
-
-    /*
-     * Before and after methods
-     */
+    private DirectTranslationTable mockedTranslationTable;
 
     @Before
     public void setUp() {
         initializeMocks();
         initializeTranslator();
     }
-
-
-    /*
-     * Test methods
-     */
 
     @Test
     public void shouldReturnAnEmptyResult() {
@@ -92,16 +71,11 @@ public class RomanToArabicTranslatorTest {
         assertEquals(TEXT_TO_TRANSLATE_TRANSLATION, translator.translate(TEXT_TO_TRANSLATE));
     }
 
-    /*
-     * Auxiliary methods
-     */
-
-
     private void initializeMocks() {
         MockitoAnnotations.initMocks(this);
     }
 
-    protected void initializeTranslator() {
+    private void initializeTranslator() {
         translator = new RomanToArabicTranslator(mockedTranslationTable);
     }
 

@@ -31,28 +31,12 @@ import static org.junit.Assert.assertEquals;
  */
 public class RomanNumeralsTest {
 
-    /*
-     * Constants
-     */
-
-    /*
-     * Test data
-     */
-
     private RomanNumerals romanNumerals;
-
-    /*
-     * Before and after methods
-     */
 
     @Before
     public void setUp() {
         initializeRomanNumerals();
     }
-
-    /*
-     * Test methods
-     */
 
     @Test
     public void shouldTranslateTheDirectTranslationsROMAN_ARABIC() {
@@ -108,10 +92,6 @@ public class RomanNumeralsTest {
         }
     }
 
-    /*
-     * Auxiliary methods
-     */
-
     private void initializeRomanNumerals() {
         romanNumerals = new RomanNumerals();
     }
@@ -129,7 +109,7 @@ public class RomanNumeralsTest {
         return directTranslations;
     }
 
-    public Map<String, Integer> getNotDirectTranslationsRomanArabic() {
+    private Map<String, Integer> getNotDirectTranslationsRomanArabic() {
         Map<String, Integer> directTranslations = new HashMap<String, Integer>();
         directTranslations.put("MMM", 3000);
         directTranslations.put("MMVIII", 2008);
@@ -154,7 +134,7 @@ public class RomanNumeralsTest {
         return directTranslations;
     }
 
-    public Map<Integer, String> getNotDirectTranslationsArabicRoman() {
+    private Map<Integer, String> getNotDirectTranslationsArabicRoman() {
         Map<Integer, String> directTranslations = new HashMap<Integer, String>();
         directTranslations.put(3000, "MMM");
         directTranslations.put(2008, "MMVIII");

@@ -25,10 +25,6 @@ import java.util.Set;
  */
 class RomanToArabicDirectTranslationTable extends DirectTranslationTable {
 
-    /*
-     * Constructor
-     */
-
     RomanToArabicDirectTranslationTable() {
         this(new LinkedHashSet<DirectTranslation>());
     }
@@ -37,10 +33,6 @@ class RomanToArabicDirectTranslationTable extends DirectTranslationTable {
         super(directTranslations);
         initializeDirectTranslationsTrable(directTranslations);
     }
-
-    /*
-     * Auxiliary methods
-     */
 
     private void initializeDirectTranslationsTrable(Set<DirectTranslation> directTranslations) {
         directTranslations.add(new DirectTranslation("I", "1"));

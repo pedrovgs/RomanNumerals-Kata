@@ -30,36 +30,19 @@ import static org.junit.Assert.*;
  */
 public class DirectTranslationTableTest {
 
-    /*
-     * Constants
-     */
-
     private static final String FROM_VALUE = "a";
     private static final String TO_VALUE = "b";
     private static final String EMPTY_RESULT = "";
 
-    /*
-     * Test data
-     */
-
     private DirectTranslationTable table;
 
     private Set<DirectTranslation> translationSet;
-
-    /*
-     * After and before methods
-     */
 
     @Before
     public void setUp() {
         initializeTranslationSet();
         initializeDirectTranslationTable();
     }
-
-
-    /*
-     * Test methods
-     */
 
     @Test
     public void shouldFindTheTranslation() {
@@ -78,10 +61,6 @@ public class DirectTranslationTableTest {
         assertFalse(table.existsTranslationFor(TO_VALUE));
         assertEquals(EMPTY_RESULT, table.getTranslationFor(TO_VALUE));
     }
-
-    /*
-     * Auxiliary methods
-     */
 
     private void initializeTranslationSet() {
         translationSet = new LinkedHashSet<DirectTranslation>();

@@ -25,23 +25,11 @@ import java.util.Set;
  */
 class DirectTranslationTable {
 
-    /*
-     * Attributes
-     */
-
     private Set<DirectTranslation> directTranslations;
-
-    /*
-     * Constructor
-     */
 
     DirectTranslationTable(Set<DirectTranslation> directTranslations) {
         this.directTranslations = directTranslations;
     }
-
-    /*
-     * Public methods
-     */
 
     String getTranslationFor(String textToTranslate) {
         return searchTranslation(textToTranslate);
@@ -55,10 +43,6 @@ class DirectTranslationTable {
     Set<DirectTranslation> getDirectTranslations() {
         return directTranslations;
     }
-
-    /*
-     * Auxiliary methods
-     */
 
     private String searchTranslation(String textToTranslate) {
         String res = "";

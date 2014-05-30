@@ -34,10 +34,6 @@ class ArabicToRomanTranslationTable extends DirectTranslationTable {
         initializeDirectTranslationsTrable(directTranslations);
     }
 
-    /*
-     * Auxiliary methods
-     */
-
     private void initializeDirectTranslationsTrable(Set<DirectTranslation> directTranslations) {
 
         directTranslations.add(new DirectTranslation("1000", "M"));
@@ -62,6 +58,5 @@ class ArabicToRomanTranslationTable extends DirectTranslationTable {
         }
         return 0;
     }
-
 
 }

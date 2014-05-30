@@ -24,32 +24,15 @@ package com.pedro.romannumerals.translator;
  */
 class RomanToArabicTranslator implements Translator {
 
-
-    /*
-     * Attributes
-     */
-
     private DirectTranslationTable translationTable;
-
-    /*
-     * Constructor
-     */
 
     public RomanToArabicTranslator(DirectTranslationTable translationTable) {
         this.translationTable = translationTable;
     }
 
-    /*
-     * Public methods
-     */
-
     public String translate(String textToTranslate) {
         return recursiveTranslation(textToTranslate);
     }
-
-    /*
-     * Auxiliary methods
-     */
 
     private String recursiveTranslation(String textToTranslate) {
         //Empty case of the recursive algorithm

@@ -23,31 +23,16 @@ package com.pedro.romannumerals.translator;
  */
 class ArabicToRomanTranslator implements Translator {
 
-    /*
-     * Attributes
-     */
     private ArabicToRomanTranslationTable arabicToRomanDirectTranslationTable;
-
-    /*
-     * Constructor
-     */
 
     public ArabicToRomanTranslator(ArabicToRomanTranslationTable arabicToRomanDirectTranslationTable) {
         this.arabicToRomanDirectTranslationTable = arabicToRomanDirectTranslationTable;
     }
 
-    /*
-     * Implemented method
-     */
-
     @Override
     public String translate(String textToTranslate) {
         return recursiveTranslation(Integer.parseInt(textToTranslate)) + "";
     }
-
-    /*
-     * Auxiliary method
-     */
 
     private String recursiveTranslation(int arabicNumber) {
         if (arabicNumber == 0) {
@@ -66,6 +51,5 @@ class ArabicToRomanTranslator implements Translator {
     private int getBetterTranslation(String arabicNumber) {
         return arabicToRomanDirectTranslationTable.getBetterTranslation(arabicNumber);
     }
-
 
 }

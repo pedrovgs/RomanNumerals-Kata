@@ -26,22 +26,13 @@ import com.pedro.romannumerals.translator.TranslatorFactory;
  */
 public class RomanNumerals {
 
-    /*
-     * Attributes
-     */
-
     private Translator romanToArabicTranslator;
     private Translator arabicToRomanTranslator;
-
-    /*
-     * Public constructor
-     */
 
     public RomanNumerals() {
         this.romanToArabicTranslator = TranslatorFactory.getRomanToArabicTranslator();
         this.arabicToRomanTranslator = TranslatorFactory.getArabicToRomanTranslator();
     }
-
 
     /**
      * Translate a number from the roman format to the arabic format.
