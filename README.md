@@ -1,4 +1,4 @@
-RomanNumerals [![Build Status](https://travis-ci.org/pedrovgs/RomanNumerals-Kata.svg?branch=master)](https://travis-ci.org/pedrovgs/RomanNumerals-Kata)
+RomanNumerals
 =============
 
 RomanNumerals kata implemented in java:
